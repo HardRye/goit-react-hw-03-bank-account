@@ -16,7 +16,6 @@ class Dashboard extends Component {
 
   componentDidMount() {
     const localTransactions = JSON.parse(localStorage.getItem('transactions'));
-    console.log(localTransactions);
     if (localTransactions) {
       this.setState({ transactions: localTransactions });
     }
